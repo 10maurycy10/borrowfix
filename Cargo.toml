@@ -1,0 +1,11 @@
+[package]
+name = "borrowfix"
+version = "0.1.0"
+edition = "2021"
+description = "A fix for all you borrow checker problems"
+readme = "README.md"
+repository = "https://github.com/10maurycy10/borrowfix"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
