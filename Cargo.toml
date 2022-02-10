@@ -5,7 +5,7 @@ edition = "2021"
 description = "A fix for all you borrow checker problems"
 readme = "README.md"
 repository = "https://github.com/10maurycy10/borrowfix"
-
+license = "Unlicense"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
