@@ -1,13 +1,17 @@
+fn lifetime_helper<'a, 'b, T>(_: &'a &'b (), v: &'b T) -> &'a T { v }
+
+fn lifetime_helper_mut<'a, 'b, T>(_: &'a &'b (), v: &'b mut T) -> &'a mut T { v }
+
+/// create a static refrence
 pub fn remember<'a, T>(data: &'a T) -> &'static T {
-    unsafe {
-        std::mem::transmute(data)
-    }
+    let f: fn(_, &'a T) -> &'static T = lifetime_helper;
+    f(&&(), data)
 }
 
+/// change a mutable refrence's lifetime
 pub fn remember_mut<'a, 'b, T>(data: &'a mut T) -> &'b mut T {
-    unsafe {
-        std::mem::transmute(data)
-    }
+    let f: fn(_, &'a mut T) -> &'b mut T = lifetime_helper_mut;
+    f(&&(), data)
 }
 
 

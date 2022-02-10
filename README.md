@@ -38,4 +38,4 @@ println!("refer is {}",refer); // Works fine
 
 ## Safety
 
-This crate is completely sound. It wont causÊÃúý$HOME/projects/borrowf[SEGMENTATION FAULT]
+As this crate uses fully safe code. It wont causÊÃúý$HOME/projects/borrowf[SEGMENTATION FAULT]
