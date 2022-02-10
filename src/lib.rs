@@ -24,4 +24,15 @@ mod tests {
         *mut_refer = 2;
         assert_eq!(*refer, 2);
     }
+    #[test]
+    fn example() {
+        fn printit(s :String) {
+            println!("{}",s);
+        }
+
+        let s = String::new();
+        let refer = remember(&s);
+        printit(s);
+        println!("refer is {}",refer); 
+    }
 }

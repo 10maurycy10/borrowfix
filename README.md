@@ -1,4 +1,4 @@
-note: This crate is a joke and under no circumstance should you actually use it (unless you want you stuff to break)
+note: This crate is a joke and under no circumstance should you actually use it (unless you want your stuff to break)
 
 # borrow-fix
 
