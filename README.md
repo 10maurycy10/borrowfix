@@ -1,3 +1,5 @@
+note: This crate is a joke and under no circumstance should you actually use it (unless you want you stuff to break)
+
 # borrow-fix
 
 Is the borrow checker getting in your way?
@@ -7,7 +9,7 @@ This crate fixes that.
 
 ## Example:
 
-without borrowfix:
+without borrow-fix:
 
 ```rust
 fn printit(s :String) {
@@ -19,7 +21,7 @@ printit(s);
 println!("s is {}",s); // Wont compile :(
 ```
 
-with borrowfix:
+with borrow-fix:
 
 ```rust
 use borrowfix::remember;
@@ -36,4 +38,4 @@ println!("refer is {}",refer); // Works fine
 
 ## Safety
 
-This crate is compleatly sound. It wont causÊÃúý$HOME/projects/borrowf[SEGMENTATION FAULT]
+This crate is completely sound. It wont causÊÃúý$HOME/projects/borrowf[SEGMENTATION FAULT]
